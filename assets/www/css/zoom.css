@@ -1,0 +1,76 @@
+/**
+	Font Size Zooming
+*/
+
+/* ZOOM Level 1 */
+.x1 #name {
+	font-size: 25px;
+}
+
+.x1 #blog {
+	font-size: 23px;
+}
+
+.x1 #date {
+	font-size: 14px;
+}
+
+/* zooming for the blog post view */
+.x1 #text .akuru-converted {
+	font-size: 22px;
+}
+
+/* ZOOM Level 2*/
+.x2 {
+	font-size: 28px;
+}
+
+.x2 #blog {
+	font-size: 26px;
+}
+
+.x2 #date {
+	font-size: 17px;
+}
+
+/* zooming for the blog post view */
+.x2 #text .akuru-converted {
+	font-size: 25px;
+}
+
+
+/* ZOOM Level 3 */
+.x3 {
+	font-size: 31px;
+}
+
+.x3 #blog {
+	font-size: 29px;
+}
+
+.x3 #date {
+	font-size: 20px;
+}
+
+/* zooming for the blog post view */
+.x3 #text .akuru-converted {
+	font-size: 28px;
+}
+
+/* ZOOM Level 4 */
+.x4 {
+	font-size: 33px;
+}
+
+.x4 #blog {
+	font-size: 32px;
+}
+
+.x4 #date {
+	font-size: 23px;
+}
+
+/* zooming for the blog post view */
+.x4 #text .akuru-converted {
+	font-size: 31px;
+}

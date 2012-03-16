@@ -1,0 +1,191 @@
+body {
+	margin: 0px;
+	background-color: #fffdf3;
+}
+
+.clear-float {
+	clear: both;
+}
+
+img {
+	border: 0px;
+}
+
+/*  Header */
+#header {
+	background-color: #917c6f;	
+	padding: 10px 10px 10px 10px;
+	top: 0px; left: 0px; right: 0px;
+	height: 30px;
+	position: absolute;
+}
+
+#wrapper {
+	
+	position: absolute;
+	top: 50px; left: 0px; right: 0px; bottom: 40px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px; left: 0px; right: 0px;
+	height: 40px;
+	background-color: #eaddb1;
+}
+
+#postViewMenu {
+	height: 100px;
+}
+
+#homeMenu {
+	height: 100px;
+}
+
+.menu div {
+	height: 100%;
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 12px 0px 0px 0px;
+	font-weight: bold;
+	font-family: sans;
+}
+
+.menu_normal {
+	color: #917c6f;
+}
+
+.menu_tap {
+	background-color: #917c6f;
+	color: white;
+}
+
+
+#header #title {
+	font-size: 30px;
+	color: #ffffff;
+	float: left;
+}
+
+#header #reload {
+	float: right;
+}
+
+#header #zoom {
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	padding: 7px 10px 0px 0px;
+	float: right;
+}
+
+#header #home {
+	padding: 0px 5px 0px 0px;
+	float: right;
+}
+
+#content {
+	padding: 0px 0px 20px 0px;
+}
+
+/* Title */
+.title {
+	position: relative;
+	border-bottom: 1px solid #ddcbcb;
+	padding: 10px 10px 10px 10px;
+}
+
+#titles .title:hover {
+	background-color: #eaddb1;
+}
+
+.title #name {
+	color: #483737;
+}
+
+.title #blog {
+	color: #916f6f;
+	float: left;
+}
+
+.title #date {
+	font-family: sans;
+	color: #916f6f;
+	float: right;
+}
+
+#loadMore {
+	
+	background-color: #f4eed5;
+	color: #241c1c;
+	font-size: 28px;
+	padding: 10px;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	cursor: pointer;
+	border: 1px solid #ddcbcb;
+}
+
+/* Post */
+.post #text {
+	
+	margin: 10px 10px 0px 10px;
+	color: #6c5353;
+	overflow: hidden;
+}
+
+.post .title {
+	background-color: #f4eed5;
+}
+
+.post #pagination {
+	
+	border-top: 1px solid #ddcbcb;
+	background-color: #f4eed5;
+	color: #241c1c;
+	font-size: 28px;
+	text-align: center;
+	margin: 10px 0px 0px 0px;
+	position: relative;
+}
+
+.post #pagination #newer {
+	
+	padding: 15px;
+	float: left;
+}
+
+.post #pagination #older {
+
+	padding: 15px;
+	float: right;
+}
+
+/* Notice */
+#notice {
+	position:absolute;
+	background-color: #ffd5d5;
+	font-size: 23px;
+	font-family: derana;
+	padding: 15px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	display: none;
+	z-index: 224;
+}
+
+#notice #loader span {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#notice #message {
+	font-family: "derana";
+}
+
+/* Template Items */
+#templateItems {
+	display: none;
+}

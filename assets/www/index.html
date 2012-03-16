@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>බ්ලොග් රාල </title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/zoom.css">
+
+  <script src="js/zepto.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/backbone-min.js"></script>
+  <script src="js/mustache.js"></script>
+  <script src="js/phonegap-1.4.1.js"></script>
+  <script src="js/webintent.js"></script>
+  <script src="js/share.js"></script>
+  <script src="js/iscroll.min.js"></script>
+
+  <script src="js/cache.js"></script>
+  <script src="js/hashMap.js"></script>
+  <script src="akurulk/akuru.min.js"></script>
+  <script type="text/javascript">
+
+  		$(document).swipeLeft(prevention);
+  		$(document).swipeRight(prevention);
+
+  		function prevention(e) { 
+
+  			console.log(e);
+	  		e.preventDefault(); 
+	  	}
+
+  		akuru.load('arjun');
+  		akuru.load('derana');
+
+  		//loading iscroll
+  		var scrollView;
+		function loaded() {
+			scrollView = new iScroll('wrapper', {vScrollbar: true, fixedScrollbar: true, hScroll: false});
+		}
+
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+		document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+
+  </script>
+
+  <script src="js/models.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/controllers.js"></script>
+
+</head>
+<body>
+	
+	<div id='header'>
+		<div id='title' class='arjun'>බ්ලොග් රාළ </div>
+		<img id='reload' src='images/reload.png'/>
+		<img id='home' src='images/home.png'/>
+		<div id='zoom'>
+
+			ZOOM
+			<!-- <img id='minus' src='images/zoom.png'/> -->
+	<!-- 		<img id='plus' src='images/plus.png'/> -->
+		</div>
+		<div class='clear-float'></div>
+	</div>
+	<div id='wrapper'>
+		<div id='content'>
+			<div id='titles'>
+				<div id='content'>
+
+
+				</div>
+				<div id='loadMore' class='arjun'>
+					තව පෙන්වන්න
+				</div>
+			</div>
+			<div id='post'></div>
+		</div>
+	</div>
+	<div id='footer'>
+
+	</div>
+
+	<div id='notice' class='derana'>
+		<div id='loader'>
+			<img src='images/loader.gif'/><br>
+			<span id='text'>පොඩ්ඩක් ඉන්න...</span>
+		</div>
+		<div id='message'>
+			
+		</div>
+	</div> 
+
+	<div id='postViewMenu' class="menu" style='display:none'>
+		<div id='newer' class='menu_normal'>NEWER</div>
+		<div id='view' class='menu_normal'>VIEW</div>
+		<div id='share' class='menu_normal'>SHARE</div>
+		<div id='older' class='menu_normal'>OLDER</div>
+		<div style='clear:both'></div>
+	</div>
+
+	<div id='homeMenu' class="menu" style='display:none'>
+		<div id='none' class='menu_normal'></div>
+		<div id='rate' class='menu_normal'>RATE US</div>
+		<div id='share' class='menu_normal'>SHARE</div>
+		<div id='none' class='menu_normal'></div>
+		<div style='clear:both'></div>
+	</div>
+
+	<div id='templateItems'>
+
+		<div id='title'>
+			<div class='title x2' id=''>
+				<div id='name' class='derana'>{{name}}</div>
+				<div id='blog' class='derana'>{{blog}}</div>
+				<div id='date'>{{date}}</div>
+				<div class='clear-float'></div>
+			</div>
+		</div>
+
+		<div id='post'>
+			<div class='post x2'>
+				<div class='title x2'>
+					<div id='name' class='derana'>ස්වර්ණවාහිනිය පච වැඩක් කරයි.</div>
+					<div id='blog' class='derana'>අරුනෝද කෑ ගසයි</div>
+					<div id='date'>2012 Feb 20</div>
+					<div class='clear-float'></div>
+				</div>
+				<div id='text' class='derana'>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
